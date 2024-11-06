@@ -17,11 +17,10 @@ bash
 pip install -r requirements.txt
 3 Train the Model: Train the model using the data.yaml file, which contains dataset configurations:
 python
-نسخ الكود
+
 model.train(data="path_to_data.yaml", epochs=10, imgsz=640, device="cpu")
 4 Use the Trained Model: After training, use the model to make predictions on new images (e.g., radiology or medical images):
 python
-نسخ الكود
 results = model("path_to_image", save=True)
 results[0].show()
 Expected Outputs:
@@ -32,5 +31,4 @@ Medical Diagnosis: This model can assist in diagnosing bone cancer accurately by
 Medical Imaging: The project represents a step toward leveraging AI for faster and more accurate analysis of radiological and medical images.
 Database link
 https://universe.roboflow.com/deepfake-umw80/bone-cancer-segmentation-xukmn
-نسخ الك
-نسخ الكو
+
